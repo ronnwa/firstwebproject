@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>MakeMyDay - Online</title>
+        <meta charset="UTF-8">
+        <meta name="Author" name="Rohan">
+        <link rel="stylesheet" href="CSS/page5_RBh49853.css">
+        <script src="SCRIPT/Script_RBh49853.js"></script>
+    </head>
+    <body>
+        <header></header>
+        <section id="section1">
+            
+            <form action="" method="get" enctype="application/x-www-form-urlencoded">
+                <fieldset>
+                    <legend>Make your order</legend>
+                    <div>
+                        <label for="farmhouse">Select Pizza</label>
+                        <span>
+                            <input type="radio" name="pizza" id="ppchicen" value="Peri Peri Chicken"> Peri Peri Chicken
+                            
+                        </span>
+                        <span>
+                            <input type="radio" name="pizza" id="farmhouse" value="Farmhouse">Farmhouse
+                        </span>
+                        <span>
+                            <input type="radio" name="pizza" id="margherita" value="Margherita">Margherita
+                        </span>
+                    </div>
+
+                    <div>
+                        <label for="size">Select Size</label>
+                        <span>
+                            <input type="radio" name="size" id="small" value="Small">Small-8$
+                        </span>
+                        <span>
+                            <input type="radio" name="size" id="medium" value="Medium">Meium-12$
+                        </span>
+                        <span>
+                            <input type="radio" name="size" id="large" value="Large">Large-18$
+                        </span>
+                    </div>
+                   
+                    <div>
+                        <label for="topping">Select Toppings</label>
+                            <span>
+                                <input type="checkbox" name="topping" id=olive value="Olive">Olive-1$
+                            </span>
+                            <span>
+                                <input type="checkbox" name="topping" id=onion value="Onion">Onion-.75$
+                            </span>
+                            <span>
+                                <input type="checkbox" name="topping" id=capsicum value="Capsicum">Capsicum-.5$
+                            </span>
+                            <span>
+                                <input type="checkbox" name="topping" id=pineapple value="Pineapple">Pineapple-1$
+                            </span>
+                        
+                    </div>
+                    <div>
+                        <span>
+                            <label for="cheeseyes">Do you want extra cheese</label>
+                            <input type="radio" name="cheese" id="cheeseyes" value="Extra Cheese/5$" >Yes - 5$
+                            <input type="radio" name="cheese" id="cheeseno" value="no/5$" > No
+                        </span>
+                        <span>
+                            <label for="">Do you want double Chicken/Veggies</label>
+                            <input type="radio" name="double" id="doubleyes" >Yes
+                            <input type="radio" name="double" id="doubeno">No
+                        </span>                       
+                    </div>
+                    <br><br><br>
+                    <div>
+                        <label for="Sides">Select Sides</label>
+                        <span>
+                            <input type="checkbox" name="sides" id="garlicbread" value="Garlic Bread">Garlic Bread-4$
+                        </span>
+                        <span>
+                            <input type="checkbox" name="sides" id="wings" value="Wings"> Wings-5$
+                        </span>
+                        <span>
+                            <input type="checkbox" name="sides" id="salad" value="Salad"> Salad-4$
+                        </span>
+                        <span>
+                            <input type="checkbox" name="sides" id="fries" value="Fries"> Fries-2$
+                        </span>
+                        <span>
+                            <input type="checkbox" name="sides" id="Chips" value="Chips"> Chips-1$
+                        </span>
+                        
+                    </div>
+                    <br><br>
+                    <div>
+                        <label for="Drinks">Drink</label>
+                        <span>
+                            <input type="checkbox" name="drinks" id="coke" value="Coke"> Coke-2$
+                        </span>
+                        <span>
+                            <input type="checkbox" name="drinks" id="canadadry" value="Canada Dry"> Canada Dry-2$
+                        </span>
+                        <span>
+                            <input type="checkbox" name="drinks" id="hotmilk" value="Hot Chocolate Milk"> Hot Chocolate Milk-4$
+                        </span>
+                    </div>
+
+
+                    <br><br>
+                    <div>
+                        <input type="reset" value="Add" id="add" onclick="orderadd()">
+                        <input type="button" value="Done" id="done" onclick="orderdone()">
+                    </div>
+                </fieldset>
+            </form>
+        </section>
+       <section id="section2">
+          <form action="" method="get" enctype="application/x-www-form-urlencoded">
+              <fieldset id="ordersummary" hidden>
+                  <legend>Order Summarry</legend>
+                  <p id="finalorder"></p>
+                  <span>
+                         <label id="clabel" for="onlineadd" style="display: none;">Enter Adress</label>
+                         <input type="text" name="oconfirm" id="onlineadd" required hidden>  
+                  </span>
+                  <span>
+                         <label id="clabel2" for="oconfirm" style="display: none;">Enter your number</label>
+                         <input type="text" name="oconfirm" id="pnumber" required hidden> 
+                  </span>
+                  
+                  <input type="submit" name="oconfirm" id="submit" value="Place Order" onclick="validateorder()" hidden>
+              </fieldset>
+          </form>
+       </section>
+    </body>
+</html>

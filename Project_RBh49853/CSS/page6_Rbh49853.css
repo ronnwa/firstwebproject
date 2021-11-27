@@ -1,0 +1,117 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    background-color:rgb(120, 202, 39);
+}
+
+body{
+    background-color: white;
+    padding: 15px;
+    height: 600px;
+}
+
+body > h1 { 
+
+    background-color: green;
+    border-radius: 10px;
+    margin: 10px;
+    padding : 10px;
+    color: white;
+    text-align: center;
+}
+
+section { 
+
+    width: 50%;
+    float: left;
+    height: 450px;
+}
+
+form{
+    padding: 20px;
+    
+    
+}
+
+fieldset > div {
+
+    display: flex;
+    flex-flow: row wrap;
+    margin: 5px;
+    
+}
+
+fieldset > div > * {
+
+    flex: 1 1 100px;
+}
+
+section > div {
+    display: flex;
+    margin: 20px;
+    
+}
+
+section > div > * {
+
+    flex: 1 1 50%;
+    margin: 10px;
+}
+
+div> h1 {
+
+    background-color: rgb(61, 177, 61);
+    border-radius: 10px;
+    padding : 10px;
+    color: white;
+    text-align: center;
+}
+
+div > h ,a {
+
+    background-color: rgb(61, 177, 61);
+    border-radius: 10px;
+    padding : 10px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    float: right;
+    width: auto;
+
+}
+
+ h1:hover , a:hover {
+
+    background-color: green;
+}
+
+header{
+    
+    background-image:url(../IMAGES/header.JPG);
+    min-height:40px;
+    
+}
+
+p[id^='target']
+{
+    font-style: italic;
+    
+}
+
+@media only screen and (min-width: 500px) and (max-width : 800px){
+
+    body{
+        height: 1200px;
+    }
+    section {
+        width: 80%;
+    }
+
+}
+
+
+
+
+

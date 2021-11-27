@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Feedback</title>
+        <meta charset="UTF-8">
+        <meta name="Author" name="Rohan">
+        <link rel="stylesheet" href="CSS/page4_RBh49853.css">
+        <script src="SCRIPT/Script_RBh49853.js"></script>
+        
+    </head>
+    <body>
+        <header>
+            
+        </header>
+        <form action="" method="get" enctype="application/x-www-form-urlencoded" id="form1" onsubmit="finishfeed()"> 
+            <fieldset id="feedback">
+                <legend>Customer Feedback Form</legend>
+                <div>
+                    <label for="Cname">Name</label>
+                    <input type="text" name="Cname" id="Cname" placeholder="Please enter your name" required>
+                </div>
+                <div>
+                    <label for="Cno">Phone Number</label>
+                    <input type="text" name="Cno" id="Cno" placeholder="xxxxxxxxxx" y pattern="\d{10}">
+                </div>
+                <div>
+                    <label for="Ono">Order Number</label>
+                    <input type="text" name="Ono" id="Ono" placeholder="Please enter your 6 digit order number" pattern="\d{6}" required>
+                </div>
+                <div>
+                    <label for="Cemail">Email</label>
+                    <input type="text" name="Cemail" id="Cemail" placeholder="one@here.com" >
+                </div>
+
+                <div>
+                    <label for="">What is your concern</label>
+                    <select name="concern" id="concern" onchange="feedbackfunc()">
+                        <option value="0" hidden selected>Please select</option>
+                        <option value="IMAGES/happy.jpg">Something i liked</option>
+                        <option value="IMAGES/sad.jpg">Something i did not like</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="feedshare">Please share your feedback</label>
+                    <textarea name="feedshare" id="feedshare" cols="30" rows="10" required></textarea>
+                </div>
+
+                <div>
+                    <input type="submit" name="submit" id="submit" value="Submit feedback" onclick="validatefeed()">
+                    <input type="reset" name="reset" id="reset" >
+                </div>
+                
+
+                <span>
+                    <div id="last">
+
+                    </div>
+                </span>
+
+                
+                
+            </fieldset>
+            <div>
+                    <img id="face" src=""  style="width: 400px; height: 400px; margin-left: 10%;" hidden >
+            </div>
+        </form>
+    </body>
+</html>

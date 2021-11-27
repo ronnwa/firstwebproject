@@ -1,0 +1,117 @@
+
+*{
+    box-sizing: border-box;
+}
+
+html{
+    background-color:rgb(120, 202, 39);
+}
+
+body{
+
+    background-color: white;
+    width: 80%;
+    margin: auto;
+}
+
+body > div {
+
+    display: flex ;
+    clear: both;
+
+}
+
+
+
+body > div > * {
+
+    flex: 1 1 100px;
+}
+
+div{
+    padding: 15px;
+    margin-top: 10px;
+}
+
+header{
+    margin-top: 20px;
+    background-image:url(../IMAGES/header.JPG);
+    min-height:40px;
+    
+}
+
+nav > ul{
+    list-style-type: none;
+    padding-right: 15px;
+
+}
+
+nav > ul > li {
+
+text-align: center;
+width: 10%;
+float: right;
+background-color:rgb(120, 202, 39);
+border-style: solid;
+border-color: black;
+border-width: 1px;
+border-top: white;
+border-left: white;
+border-radius: 10px;
+
+}
+
+ a {
+
+text-decoration: none;
+display: block;
+color:black;
+
+
+}
+
+div> h , div > a {
+
+    background-color:rgb(120, 202, 39);
+    border-radius: 10px;
+    padding : 10px;
+    color: white;
+    text-align: center;
+}
+
+div > a {
+    margin: 10px;
+    text-decoration: none;
+    
+}
+
+
+div > a:hover , li:hover{
+    background-color: green;
+}
+#wel{
+
+    background-color: chartreuse;
+    border-radius: 10px;
+    padding : 10px;
+    color: white;
+    text-align: center;
+
+}
+
+
+
+div > img {
+
+    border-radius: 20px ;
+    width: 95%;
+    margin-left: 20px;
+    height: 200px;
+    margin-top: 10px;
+}
+
+
+
+
+
+

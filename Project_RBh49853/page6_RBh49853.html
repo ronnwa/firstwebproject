@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Reservation</title>
+        <meta charset="UTF-8">
+        <meta name="Author" name="Rohan">
+        <link rel="stylesheet" href="CSS/page6_Rbh49853.css">
+        <script src="SCRIPT/Script_RBh49853.js"></script>
+        <meta name="viewport" content="width=device-width"> 
+    </head>
+    <body>
+        <header>
+
+        </header>
+        <h1>Please Fill The Information</h1>
+        <section>
+            <div>
+                <h1 onclick="dinelocation(this)" >MakeMyDay <br> 12204 80B <br> Surrey V3W 7R5</h1>
+                <h1 onclick="dinelocation(this)">MakeMyDay <br>11691 88 <br> Delta V4C 3C2</h1>        
+            </div>
+            <div>
+                <h1 onclick="dinelocation(this)">MakeMyDay <br> 11568 9000st <br> Vancouver V4T U7W</h1>
+                <h1 onclick="dinelocation(this)">MakeMyDay <br> Unit200 Surrey Central Mall <br>Surrey V4T 9R5</h1>
+            </div>
+        </section>
+        <section>
+            <form action="" method="get" enctype="application/x-www-form-urlencoded">
+                <fieldset>
+                    <legend id="dinelegend"> Reservation - Details </legend>
+                    <div>
+                        <label for="dinename">Name</label>
+                        <input type="text" name="dinename" id="dinename" placeholder="Your name" required>
+                    </div>
+                    <div>
+                        <label for="guestnum">Number of Guests</label>
+                        <input type="text" name="guestnum" id="guestnum" placeholder="Guest number" required>
+                    </div>
+                    <div>
+                        <label for="datetime">Reservation Time</label>
+                        <input type="datetime-local" name="datetime" id="datetime" placeholder="Enter the Date&Time" required>
+                    </div>
+                    <div>
+                        <label for="custnum">Enter your number</label>
+                        <input type="text" name="custnum" id="custnum" placeholder="xxx-xxx-xxxx" required>
+                    </div>
+                    <span>
+                        <p id="targetdinelocation"></p>
+                        <p id="targetdinename"></p>
+                        <p id="targetNguest"></p>
+                        <p id="targetdatetime"></p>
+                        <p id="targetcnum"></p>
+                    </span>
+                    
+
+                    
+                    <input type="button" name="confdinein" id="confdinein" value="Generate Card" onclick="cardf()  " >
+
+                    
+                   
+                </fieldset>
+            </form>
+        </section>
+
+        <a href="index.html" style="clear: both;">Return Back</a>
+    </body>
+</html>

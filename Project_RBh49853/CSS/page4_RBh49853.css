@@ -1,0 +1,109 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    background-color:chartreuse;
+}
+
+body{
+
+    background-color: white;
+    width: 90%;
+    margin: auto;
+}
+
+header{
+    margin-top: 20px;
+    background-image:url(../IMAGES/header.JPG);
+    min-height:40px;
+    
+}
+
+body > div {
+
+    display: flex;
+}
+
+header{
+    padding-top: 15px;
+    
+}
+
+nav > ul{
+    list-style-type: none;
+    padding-right: 15px;
+
+}
+
+nav > ul > li {
+
+text-align: center;
+width: 10%;
+float: right;
+background-color: chartreuse;
+border-style: solid;
+border-color: black;
+border-width: 1px;
+border-top: white;
+border-left: white;
+
+}
+
+ul > li > a {
+
+text-decoration: none;
+display: block;
+color:black;
+
+
+}
+#form1{
+
+    display: flex;
+    flex-flow: row wrap;
+    margin-top: 10px;
+    padding: 20px;
+    
+    
+}
+
+#form1 > * {
+
+    flex: 1 1 100px;
+    height: 500px;
+}
+
+
+#feedback > legend {
+    background-color:chartreuse;
+    padding: 5px;
+    border-radius: 5px;
+    
+}
+
+#feedback > div {
+
+    display: flex;
+    flex-flow: row wrap;
+}
+
+#feedback > div > * {
+
+    flex: 1 1 100px;
+    padding: 5px;
+    margin: 2px;
+    border-radius: 5px;
+    
+
+}
+
+#last{
+
+    margin-top: 50px;
+    margin-left: 60px;
+    margin-right: 50px;
+    text-align: center;
+    font-style: italic;
+    background-color: chartreuse;
+}
